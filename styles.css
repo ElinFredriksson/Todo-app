@@ -29,6 +29,7 @@ body {
     padding: 0 1rem;
     float: right;
     cursor: pointer;
+    border-radius: 1rem;
     /* flex: 1; */
     /* justify-content: flex-start; */
     /* float: right; */
@@ -40,6 +41,7 @@ body {
 
 .completed {
     text-decoration: line-through;
+    
 }
 
 /* MODAL */
@@ -59,16 +61,20 @@ body {
     background-color: #f4f4f4;
     margin: 20% auto;
     padding: 20px;
-    width: 70%;
+    width: 50%;
     box-shadow: 0 5px 8px 0 rgba(0,0,0,0.2), 0 7px 20px 0 rgba(0,0,0,0.17);
     animation-name: modalopen;
     animation-duration: 0.5s;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
 }
 
 .closeBtn{
-    color: #ccc;
+    /* color: #ccc; */
     float: right;
     font-size:30px;
+    color: red;
 }
 
 .closeBtn:hover,
